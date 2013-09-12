@@ -7,6 +7,7 @@
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2",
     "ember": "~1.0.0",
+    "leaflet-dist": "~0.6.4"
   },
   "devDependencies": {}
 }
