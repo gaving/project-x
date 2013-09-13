@@ -1,9 +1,7 @@
 {
   "name": "project-x",
   "version": "0.0.0",
-  "dependencies": {
-    "requirejs": "~2.1.8"
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",
