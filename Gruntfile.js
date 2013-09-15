@@ -51,23 +51,23 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
             },
- ember_templates: {
-      files: '<%= yeoman.app %>/templates/**/*.handlebars',
-      tasks: ['ember_templates']
-  },
+            emberTemplates: {
+              files: '<%= yeoman.app %>/templates/**/*.handlebars',
+              tasks: ['emberTemplates']
+            },
         },
-ember_templates: {
-  compile: {
-    options: {
-      templateName: function(sourceFile) {
-        return sourceFile.replace(/app\/templates\//, '');
-      }
-    },
-    files: {
-      "<%= yeoman.app %>/scripts/templates.js": ["<%= yeoman.app %>/templates/**/*.handlebars"]
-    }
-  }
-},
+        emberTemplates: {
+          compile: {
+            options: {
+              templateName: function(sourceFile) {
+                return sourceFile.replace(/app\/templates\//, '');
+              }
+            },
+            files: {
+              "<%= yeoman.app %>/scripts/templates.js": ["<%= yeoman.app %>/templates/**/*.handlebars"]
+            }
+          }
+        },
         connect: {
             options: {
                 port: 9000,
@@ -369,7 +369,7 @@ ember_templates: {
             'clean:server',
             'concurrent:server',
             'autoprefixer',
-            'ember_templates',
+            'emberTemplates',
             'connect:livereload',
             'watch'
         ]);
